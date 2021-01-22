@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ta kontakt!</title>
+    <link rel="stylesheet" href="Form_ovn-styles.css">
+</head>
+<body>
+    
+    <h1>Ta Kontakt!</h1>
+    <h3>Obligatoriksa fält är bemärkta med en stjärna *</h3>
+
+    <h4>Kontaktuppgifter</h4>
+    <label for="name">Name *</label>
+    <input type="text" id="name" name="name" required
+       minlength="4" maxlength="8" size="10">
+
+
+       <label for="Epost">Epost *</label>
+
+       <input type="Epost" id="Epsot"
+              pattern=".+@gmail.co" size="30" required>
+
+    <label for="start">födelsedatum: date *</label>
+
+    <input type="date" id="start" name="trip-start"
+              value="2018-07-22"
+              min="1900-01-01" max="2021-22-1">
+
+    <h4>Tillägsinfo</h4>
+
+    <p><p>Vitsord (1-5):</p>
+
+    <div>
+     <input type="range" id="Vitsord" name="Vitsord"
+              min="0" max="5">
+     
+     </div>
+
+     <label for="Kommentar">Kommentar:</label>
+
+     <input type="text" id="Kommentar" name="Kommentar" required
+             minlength="0" maxlength="100" size="40">
+             
+
+     <div>
+        <input type="checkbox" id="checkbox" name="checkbox" 
+            checked>  
+        <label for="checkbox">Skicka gärna nyhetsbrev!</label>
+    </div>
+
+    <input class="button"
+       type="button"
+       value="skicka">
+
+
+              
+</body>
+</html>
